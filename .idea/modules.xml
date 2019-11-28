@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/tesseract.iml" filepath="$PROJECT_DIR$/.idea/tesseract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TesseractWeb.iml" filepath="$PROJECT_DIR$/.idea/TesseractWeb.iml" />
     </modules>
   </component>
 </project>

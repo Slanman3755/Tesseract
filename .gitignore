@@ -95,4 +95,3 @@ htmlcov/
 # Custom
 __pycache__/
 env/
-env*

@@ -19,3 +19,13 @@
 +defaults::xz-5.2.4-h1de35cc_4
 +defaults::zlib-1.2.11-h1de35cc_3
 # update specs: ['python=3.7']
+==> 2019-11-28 01:52:51 <==
+# cmd: /opt/anaconda3/bin/conda install -p /Users/spencerlanman/PycharmProjects/TesseractWeb/env flask -y
+# conda version: 4.7.12
++defaults::click-7.0-py37_0
++defaults::flask-1.1.1-py_0
++defaults::itsdangerous-1.1.0-py37_0
++defaults::jinja2-2.10.3-py_0
++defaults::markupsafe-1.1.1-py37h1de35cc_0
++defaults::werkzeug-0.16.0-py_0
+# update specs: ['flask']

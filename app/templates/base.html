@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Zaffeine - {% block title %}{% endblock %}</title>
-    <!-- Bootstrap core CSS -->
-    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="/static/css/base.css" rel="stylesheet">
-    {% block style %}
-    {% endblock %}
-</head>
-<body>
-<div class="container">
-    <div class="header clearfix">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="/"><h1>Zaffeine</h1></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <head>
+        <title>Zaffeine - {% block title %}{% endblock %}</title>
+        <link rel="shortcut icon" href="/static/images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="57x57" href="/static/images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/static/images/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/static/images/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/static/images/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/static/images/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/static/images/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/static/images/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/static/images/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/static/images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/static/images/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+        <link rel="manifest" href="/static/images/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/static/images/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Bootstrap core CSS -->
+        <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="/static/css/base.css" rel="stylesheet">
+        {% block style %}
+        {% endblock %}
+    </head>
+    <body>
+        <div class="header container bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand w-25" href="/"><img src="/static/images/logo.png" class="img-fluid" alt="Tesseract"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/map">Map</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    {% block body %}
-    {% endblock %}
-    <footer class="footer">
-        <p>© 2020 Zaffeine.com</p>
-    </footer>
-</div> <!-- /container -->
-</body>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/map">Map</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="body container bg-white pb-3">
+            {% block body %}
+            {% endblock %}
+
+        </div> <!-- /container -->
+        <div class="footer container">
+            <footer class="footer">
+                <p class="text-light">© 2020 Zaffeine.com</p>
+            </footer>
+        </div>
+    </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Zaffeine - {% block title %}{% endblock %}</title>
+        <title>Tesseract - {% block title %}{% endblock %}</title>
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
@@ -29,14 +29,20 @@
     </head>
     <body>
         <div class="header container bg-light">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand w-25" href="/"><img src="/images/logo.png" class="img-fluid" alt="Tesseract"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="/">
+                    <picture class="header-logo">
+                        <source srcset="/images/logo.jp2" type="image/jp2">
+                        <source srcset="/images/logo.webp" type="image/webp">
+                        <source srcset="/images/logo.png" type="image/png">
+                        <img src="/images/logo.png" alt="Tesseract">
+                    </picture>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basenavbar"
+                        aria-controls="basenavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="basenavbar">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="/">Home</a>
@@ -51,11 +57,10 @@
                 </div>
             </nav>
         </div>
-        <div class="body container bg-white pb-3">
+        <div class="base container bg-white pb-5">
             {% block body %}
             {% endblock %}
-
-        </div> <!-- /container -->
+        </div>
         <div class="footer container">
             <footer class="footer">
                 <p class="text-light">© 2020 Zaffeine.com</p>
